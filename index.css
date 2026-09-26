@@ -1,0 +1,78 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  gap: 1rem;
+}
+
+.calc-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 1rem 1.5rem;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: inset 2px 10px 10px grey;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+}
+.result {
+  border: none;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: inset 5px 5px 10px rgb(199, 199, 199);
+  color: white;
+}
+.result::placeholder {
+  color: white;
+}
+
+.btns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  background-color: rgb(185, 185, 185);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: inset 5px 5px 10px grey;
+}
+
+.btns-container button {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.35s ease-in-out;
+}
+.btns-container button:hover {
+  background-color: rgb(194, 194, 194);
+  scale: 1.05;
+}
+.btns-container button:active {
+  scale: 0.95;
+}
+
+.btns-container button:nth-child(4),
+.btns-container button:nth-child(20) {
+  color: white;
+  background-color: rgb(255, 94, 0);
+}
+.btns-container button:nth-child(5),
+.btns-container button:nth-child(17) {
+  color: white;
+  background-color: blue;
+}
+
+.btns-container button:nth-child(19) {
+  color: blue;
+  background-color: greenyellow;
+}
