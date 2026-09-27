@@ -3,28 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A sleek, responsive calculator built with HTML, CSS, and JavaScript."
+    />
     <link rel="stylesheet" href="./index.css" />
-    <title>Document</title>
+    <title>Modern Calculator</title>
   </head>
   <body>
-    <main>
+    <main class="app-shell">
       <div class="calc-container" aria-label="calculator container">
+        <div class="calc-header">
+          <span class="calc-brand">CALC</span>
+          <span class="calc-status">ready</span>
+        </div>
+
         <div class="result-container js-result-container">
           <input
-            placeholder="0"
-            disabled
             aria-label="result value"
             type="text"
             class="result js-result"
             value="0"
+            readonly
           />
         </div>
+
         <div
           class="btns-container js-btns-container"
           aria-label="buttons container"
         ></div>
       </div>
     </main>
+
     <script src="./index.js"></script>
   </body>
 </html>
